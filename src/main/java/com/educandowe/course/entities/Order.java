@@ -20,6 +20,7 @@ public class Order implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long Id;
+	
 	private Instant moment;
 	
 	@ManyToOne
@@ -30,7 +31,6 @@ public class Order implements Serializable{
 	}
 
 	public Order(Long id, Instant moment, User client) {
-		super();
 		Id = id;
 		this.moment = moment;
 		this.client = client;
@@ -76,14 +76,4 @@ public class Order implements Serializable{
 		Order other = (Order) obj;
 		return Objects.equals(Id, other.Id);
 	}
-
-	@Override
-	public String toString() {
-		return "Order [Id=" + Id + ", moment=" + moment + ", client=" + client + "]";
-	}
-
-	
-	
-	
-
 }
