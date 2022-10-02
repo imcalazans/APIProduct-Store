@@ -49,6 +49,10 @@ public class OrderItem implements Serializable {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	
+	public Double getSubTotal() {
+		return price*quantity;
+	}
 
 	@JsonIgnore
 	public Order getOrder() {
