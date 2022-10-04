@@ -13,15 +13,19 @@ import com.educandowe.course.repositories.UserRepository;
 public class UserService {
 	
 	@Autowired
-	private UserRepository Repository;
+	private UserRepository repository;
 	
 	public List<User> findAll(){
-		return Repository.findAll();
+		return repository.findAll();
 	}
 	
 	public User findById(Long Id) {
-		Optional<User> obj = Repository.findById(Id);
+		Optional<User> obj = repository.findById(Id);
 		return obj.get();
+	}
+	
+	public User insert(User obj) {
+		return repository.save(obj);
 	}
 
 }
