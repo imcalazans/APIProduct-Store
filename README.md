@@ -1,22 +1,35 @@
 <h1>API Controle de estoque</h1>
 
 <h3>
-💻 API para controlar o estoque com:
+💻 API para controlar o estoque com as funções:
 </h3>
 <p>
-Cadastramento de produtos, com descrição, preço, URL de imagem e categoria, Cadastramento de Categoria de produtos 
-Geração de pedido com Usuário e pedidos contendo um ou mais produtos onde cada produto pertence à ao menos uma categoria.
+Buscar todos os produtos, com descrição, preço, URL de imagem e categoria,</br>
+Buscar um produto apenas mensionando o "id" do produto no corpo da URL,</br>
+Buscar todas as categorias,</br>
+Buscar uma categoria apenas mensionando o "id" da categoria no corpo da URL,</br>
+Cadastramento de usuário,</br>
+Atualização cadastral do usuário,</br>
+Buscar todos os usuários,</br>
+Buscar um usuário por id,</br>
+Buscar todos os pedidos,</br>
+Buscar um pedido mensionando o "id" do pedido no corpo da URL, onde devolve </br> 
+os produtos contidos no pedido e o usuário do pedido
 </p>
 <h3>
 ⚙️ Tecnologias Utilizadas
 </h3>
 <p>
-O projeto foi criado com Spring Boot na linguagem de programação Java com BD H2 para teste, utilizando Spring Data JPA e o gerenciador de dependência Maven.
-Arquitetura
+O projeto foi criado com Spring Boot na linguagem de programação Java com BD H2 para teste, </br> 
+utilizando Spring Data JPA e o gerenciador de dependência Maven.
 </p>
+
 <h3>
-O projeto está divido nas seguintes camadas:
+Arquitetura
 </h3>
+<h4>
+O projeto está divido nas seguintes camadas:
+</h4>
 <ul>
 <ol>main</ol>
 <ol>Entidade</ol>
